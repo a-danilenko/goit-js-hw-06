@@ -4,7 +4,8 @@ const getUsersWithEyeColor = (array, color) => array.map(({
 }) => eyeColor === color);
 
 console.log(getUsersWithEyeColor(users, 'blue'));
-[{
+
+[   {
         id: "701b29c3-b35d-4cf1-a5f6-8b12b29a5081",
         name: "Moore Hensley",
         email: "moorehensley@indexia.com",
@@ -16,6 +17,7 @@ console.log(getUsersWithEyeColor(users, 'blue'));
         gender: "male",
         age: 37,
     },
+    
     {
         id: "7a3cbd18-57a1-4534-8e12-1caad921bda1",
         name: "Sharlene Bush",
