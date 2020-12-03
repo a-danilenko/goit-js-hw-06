@@ -38,13 +38,29 @@ const users = [
 ];
 
 // Write code under this line
-const getSortedUniqueSkills = (users) => users
-  .reduce((getSkills, user) => [...getSkills, ...user.skills], [])
-  .filter((el, index) => users.indexOf(el) === index);
-   
-console.log(getSortedUniqueSkills);
+// const getSortedUniqueSkills = users
+//   .reduce((getSkills, { skills }) => [...getSkills, ...skills], []);
 
+// const sort = users.filter((el, index) => users.indexOf(el) === index).sort();
+// console.log(sort);
+
+
+
+const getSortedUniqueSkills = (array) => {
+  const arr = array.reduce((getSkills, { skills }) => [...getSkills, ...skills], []);
+  
+  console.log(arr);
+  
+  const sort = arr
+  	.filter((el, index) => arr.indexOf(el) === index)
+    .sort();
+  console.log(sort);
+  return sort;
+}
+   
 console.log(getSortedUniqueSkills(users));
+
+
 /* [ 'adipisicing', 'amet',
  'anim', 'commodo',
  'culpa', 'elit',
